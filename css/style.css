@@ -272,13 +272,13 @@ h3 {
 .overlay2::before {
   position: absolute;
   content: "";
-  background-color: #0B2A5B;
+  background: linear-gradient(90deg, rgba(6, 22, 50, 0.88) 0%, rgba(6, 22, 50, 0.64) 50%, rgba(6, 22, 50, 0.82) 100%);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.38;
+  opacity: .96;
 }
 
 /* line 172, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
@@ -474,7 +474,7 @@ h3 {
 
 /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
 .boxed-btn:hover {
-  background: #0B2A5B;
+  background: #fff;
   color: #fff !important;
   border: 1px solid #0B2A5B;
 }
@@ -1084,7 +1084,7 @@ h3 {
 
 /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area {
-  background: #0B2A5B;
+  background: #fff;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -1128,15 +1128,23 @@ h3 {
 @media (max-width: 767px) {
   /* line 56, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .logo img {
-    width: 100px;
+    width: 56px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 56, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .logo img {
-    width: 100px;
+    width: 62px;
   }
+}
+
+/* line 57, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
+.header-area .main-header-area .logo img {
+  width: 72px;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* line 68, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -1164,14 +1172,14 @@ h3 {
 
 /* line 77, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .socail_links ul li a {
-  color: #A8A7A0;
+  color: #0B2A5B;
   margin: 0 10px;
   font-size: 15px;
 }
 
 /* line 81, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .socail_links ul li a:hover {
-  color: #fff;
+  color: #07203f;
 }
 
 /* line 88, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -1181,11 +1189,11 @@ h3 {
 
 /* line 90, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a {
-  background: #fff;
+  background: #0B2A5B;
   padding: 12px 26px;
   font-size: 16px;
   font-weight: 600;
-  color: #222;
+  color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1201,8 +1209,8 @@ h3 {
 
 /* line 101, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .Appointment .book_btn a:hover {
-  background: #fff;
-  color: #0B2A5B;
+  background: #07203f;
+  color: #fff;
 }
 
 /* line 108, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -1247,7 +1255,7 @@ h3 {
 
 /* line 130, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a {
-  color: #fff;
+  color: #0B2A5B;
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 600;
@@ -1293,7 +1301,7 @@ h3 {
 
 /* line 158, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li a:hover {
-  color: #222;
+  color: #07203f;
 }
 
 /* line 162, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -1328,7 +1336,7 @@ h3 {
   -o-transition: 0.3s;
   transition: 0.3s;
   display: block;
-  color: #000;
+  color: #0B2A5B;
 }
 
 /* line 182, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -1338,7 +1346,7 @@ h3 {
 
 /* line 186, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-  color: #000;
+  color: #07203f;
 }
 
 /* line 191, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
@@ -1372,7 +1380,7 @@ h3 {
   transition: transform 500ms ease, background 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-  background: #0B2A5B;
+  background: #fff;
   bottom: auto;
 }
 
@@ -2262,6 +2270,15 @@ h3 {
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 35px;
+}
+
+/* line 60, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .footer_logo img {
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -6804,6 +6821,391 @@ h6 {
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
+}
+
+/* Mobile premium polish for the full project */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button,
+.boxed-btn3,
+.boxed-btn4,
+.boxed-btn5,
+.boxed-btn6,
+.read_more {
+  touch-action: manipulation;
+}
+
+@media (max-width: 767px) {
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-area {
+    padding: 0;
+  }
+
+  .header-area .main-header-area {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 8px 0 0;
+  }
+
+  .header-area .main-header-area .logo img {
+    width: 100px;
+  }
+
+  .header-area .main-header-area .logo {
+    display: none;
+  }
+
+  .mobile_menu {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .slicknav_menu {
+    margin-right: 0;
+    background: transparent;
+  }
+
+  .slicknav_btn {
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    padding: 8px 10px;
+  }
+
+  .slicknav_menu .slicknav_nav {
+    width: calc(100% - 16px);
+    top: 52px;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    padding: 8px 0;
+  }
+
+  .slicknav_menu .slicknav_nav a {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .slider_area .single_slider {
+    height: auto;
+    min-height: 620px;
+    padding: 140px 0 72px;
+    background-position: center top;
+  }
+
+  .slider_area .single_slider .slider_text {
+    padding-top: 86px;
+  }
+
+  .slider_area .single_slider .slider_text > span {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+  }
+
+  .slider_area .single_slider .slider_text h3 {
+    font-size: 32px;
+    line-height: 1.15;
+    max-width: 12ch;
+    margin-bottom: 16px;
+  }
+
+  .slider_area .single_slider .slider_text p {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 28ch;
+    margin-bottom: 28px;
+  }
+
+  .boxed-btn3,
+  .boxed-btn4,
+  .boxed-btn6 {
+    min-height: 46px;
+    padding: 14px 22px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section_padding {
+    padding: 60px 0;
+  }
+
+  .mb-55 {
+    margin-bottom: 28px;
+  }
+
+  .section_title h3 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .reson_area .single_reson,
+  .popular_causes_area .single_cause,
+  .news__area .single__blog {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(11, 42, 91, 0.08);
+  }
+
+  .reson_area .single_reson .help_content {
+    padding: 22px 20px 24px;
+  }
+
+  .latest_activites_area .activites_info {
+    padding: 44px 16px;
+  }
+
+  .latest_activites_area .activites_info .section_title h3 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .latest_activites_area .activites_info p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .popular_causes_area .single_cause .causes_content {
+    padding: 24px 18px 28px;
+  }
+
+  .popular_causes_area .single_cause .causes_content .balance {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    align-items: center;
+  }
+
+  .popular_causes_area .single_cause .causes_content .balance span {
+    font-size: 13px;
+  }
+
+  .popular_causes_area .single_cause .causes_content h4 {
+    font-size: 18px;
+  }
+
+  .counter_area .counter_bg {
+    padding: 18px 12px;
+    border-radius: 20px;
+  }
+
+  .counter_area .counter_bg .row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .counter_area .counter_bg .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .counter_area .counter_bg .row > [class*="col-"] {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .counter_area .single_counter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 96px;
+    padding: 12px 10px;
+    margin-bottom: 0;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  .counter_area .single_counter .icon {
+    display: none;
+  }
+
+  .counter_area .single_counter .events h3 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .counter_area .single_counter .events p {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+  }
+
+  .our_volunteer_area .section_title {
+    margin-bottom: 14px;
+  }
+
+  .our_volunteer_area .section_title h3 {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .our_volunteer_area .volunteer-track,
+  .our_volunteer_area .row.justify-content-center.volunteer-track {
+    display: flex !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start !important;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 12px;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+    padding: 8px 12px 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    cursor: grab;
+  }
+
+  .our_volunteer_area .volunteer-track::-webkit-scrollbar,
+  .our_volunteer_area .row.justify-content-center.volunteer-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .our_volunteer_area .volunteer-track > [class*="col-"],
+  .our_volunteer_area .row.justify-content-center.volunteer-track > [class*="col-"] {
+    flex: 0 0 calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    min-width: calc(50% - 5px);
+    padding-left: 0;
+    padding-right: 0;
+    scroll-snap-align: center;
+  }
+
+  .our_volunteer_area .single_volenteer {
+    margin-bottom: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 14px 30px rgba(11, 42, 91, 0.12);
+    transform: translateZ(0);
+  }
+
+  .our_volunteer_area .single_volenteer .volenteer_thumb {
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .our_volunteer_area .single_volenteer .volenteer_thumb img {
+    width: 100%;
+    aspect-ratio: 3 / 3.85;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .our_volunteer_area .single_volenteer .voolenteer_info {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin-top: -14px;
+    border-radius: 0 0 18px 18px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .our_volunteer_area .single_volenteer .voolenteer_info .info_inner {
+    padding: 14px 12px 14px 12px;
+  }
+
+  .our_volunteer_area .single_volenteer .voolenteer_info .info_inner h4 {
+    font-size: 15px;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+
+  .our_volunteer_area .single_volenteer .voolenteer_info .info_inner p {
+    font-size: 12px;
+    color: #5d6574;
+  }
+
+  .our_volunteer_area .single_volenteer .voolenteer_info .social_links {
+    display: none;
+  }
+
+  .footer .footer_top {
+    padding: 40px 0 20px;
+  }
+
+  .footer .footer_top .footer_widget h3 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .footer .footer_top .footer_widget p,
+  .footer .footer_top .footer_widget .links li a {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .copy-right_text .copy_right p {
+    font-size: 13px;
+    line-height: 1.7;
+    padding: 0 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-area .main-header-area {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .section_padding {
+    padding: 80px 0;
+  }
+
+  .slider_area .single_slider {
+    height: 700px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

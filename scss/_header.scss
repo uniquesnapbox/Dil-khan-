@@ -14,7 +14,7 @@
         padding: 0 10px 10px 10px;
     }
     .main-header-area{
-        background: #0B2A5B;
+        background: #fff;
         @include border-radius(10px);
         padding: 25px 35px;
         position: absolute;
@@ -54,13 +54,17 @@
         // }
         .logo{
             img{
+                width: 110px;
+                height: auto;
+                object-fit: contain;
+                display: block;
                 @media #{$mobile_device} {
                     // padding-left: 20px;
-                    width: 100px;
+                    width: 86px;
                 }
                 @media #{$tablet_device} {
                     // padding-left: 20px;
-                    width: 100px;
+                    width: 86px;
                 }
                
             }
@@ -75,11 +79,11 @@
                        display: inline-block;
 
                        a{
-                        color: #A8A7A0;
+                        color: #0B2A5B;
                         margin: 0 10px;
                         font-size: 15px;
                         &:hover{
-                            color: #fff;
+                            color: #07203f;
                         }
                        }
                    }
@@ -88,19 +92,19 @@
            .book_btn{
                margin-left: 30px;
                a{
-                background: #fff;
+                background: #0B2A5B;
                 padding: 12px 26px;
                 font-size: 16px;
                 font-weight: 600;
-                color: #222;
+                color: #fff;
                 @include border-radius(4px);
                 font-family: $font2;
                 @media #{$mid_device} {
                     padding: 12px 20px;
                 }
                 &:hover{
-                    background: #fff;
-                    color: #0B2A5B;
+                    background: #07203f;
+                    color: #fff;
                 }
                }
            }
@@ -128,7 +132,7 @@
                     //     margin-right: 15px;
                     // }
                     a{
-                        color: #fff;
+                        color: #0B2A5B;
                         font-size: 16px;
                         text-transform: capitalize;
                         font-weight: 600;
@@ -156,7 +160,7 @@
                             }
                         }
                         &:hover{
-                            color: #222;
+                            color: #07203f;
                         }
                     }
                     .submenu {
@@ -178,13 +182,13 @@
                                 position: inherit;
                                 @include transition(.3s);
                                 display: block;
-                                color: #000;
+                                color: #0B2A5B;
                                 &::before{
                                     display: none;
                                 }
                             }
                             &:hover a{
-                                color: #000;
+                                color: #07203f;
                             }
                         }
                     }
@@ -216,7 +220,7 @@
             -webkit-transition: transform 500ms ease, background 500ms ease;
             box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
             // padding: 10px 150px;
-            background: #0B2A5B;
+            background: #fff;
             bottom: auto;
             @media #{$mobile_device} {
                 padding: 10px 10px;

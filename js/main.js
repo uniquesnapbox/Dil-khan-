@@ -301,6 +301,71 @@ function mailChimp() {
 }
 mailChimp();
 
+function initVolunteerAutoScroll() {
+  var track = document.querySelector('.our_volunteer_area .volunteer-track');
+  if (!track || !window.matchMedia('(max-width: 767px)').matches) {
+    return;
+  }
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
+  if (!track.dataset.autoScrollReady) {
+    track.dataset.autoScrollReady = 'true';
+    var items = Array.prototype.slice.call(track.children);
+    items.forEach(function (item) {
+      track.appendChild(item.cloneNode(true));
+    });
+  }
+
+  var paused = false;
+  var speed = 0.18;
+  var loopWidth = track.scrollWidth / 2;
+
+  function refreshLoopWidth() {
+    loopWidth = track.scrollWidth / 2;
+  }
+
+  function step() {
+    if (!paused) {
+      if (track.scrollLeft >= loopWidth) {
+        track.scrollLeft = 0;
+      } else {
+        track.scrollLeft += speed;
+      }
+    }
+
+    window.requestAnimationFrame(step);
+  }
+
+  track.addEventListener('touchstart', function () {
+    paused = true;
+  }, { passive: true });
+
+  track.addEventListener('touchend', function () {
+    paused = false;
+  }, { passive: true });
+
+  track.addEventListener('touchcancel', function () {
+    paused = false;
+  }, { passive: true });
+
+  track.addEventListener('mouseenter', function () {
+    paused = true;
+  });
+
+  track.addEventListener('mouseleave', function () {
+    paused = false;
+  });
+
+  window.addEventListener('resize', refreshLoopWidth);
+  window.addEventListener('load', refreshLoopWidth);
+  window.requestAnimationFrame(step);
+}
+
+document.addEventListener('DOMContentLoaded', initVolunteerAutoScroll);
+
 
 
         // Search Toggle

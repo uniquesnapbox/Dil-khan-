@@ -57,6 +57,13 @@
                 color: #fff;
                 text-transform: capitalize;
                 margin-bottom: 35px;
+                img{
+                    width: 140px;
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    display: block;
+                }
                 @media #{$mobile_device} {
                     margin-bottom: 20px;
                 }
